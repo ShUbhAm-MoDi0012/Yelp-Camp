@@ -48,6 +48,4 @@ app.use("/campgrounds/:id/comments",commentRoutes);
 app.use("/", indexRoutes);
 
 
-app.listen(3000,function(){
-	console.log("Yelp Camp has been started.");
-});
+app.listen(process.env.PORT,process.env.IP);
