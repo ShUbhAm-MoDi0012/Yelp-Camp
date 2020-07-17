@@ -15,7 +15,7 @@ var commentRoutes     =require("./routes/comments"),
 	campgroundRoutes  =require("./routes/campgrounds"),
 	indexRoutes       =require("./routes/index");
 
-mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true,useCreateIndex: true});
+mongoose.connect("mongodb+srv://dbuser:papamummy@2532314@blogsite.ztinz.mongodb.net/dbuser?retryWrites=true&w=majority",{useNewUrlParser: true,useCreateIndex: true});
 // "mongodb://localhost:27017/yelp_camp"
 // "mongodb+srv://dbuser:papamummy@2532314@yelpcamp.ztinz.mongodb.net/dbuser?retryWrites=true&w=majority"
 app.use(bodyParser.urlencoded({extended:true}));
